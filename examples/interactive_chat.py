@@ -31,6 +31,8 @@ def generate(args):
     if args.ta_prompt:
         with open(args.ta_prompt, "r") as f:
             user_prompt = f.read()
+    else:
+        user_prompt = ""
 
     if args.apply_chat_template:
         conversations = []
